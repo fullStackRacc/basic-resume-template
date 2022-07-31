@@ -11,13 +11,13 @@ $(document).ready(function() {
     .then(data => {
     
       //Retrieve the template data from the HTML .
-      var source = $('#resume-template').html();
+      let source = $('#resume-template').html();
     
       //compile the template engine
-      var template = Handlebars.compile(source);
+      let template = Handlebars.compile(source);
     
       //attach variables to compiled source
-      var output = template(data);
+      let output = template(data);
     
       //add to body
       $(document.body).append(output);
